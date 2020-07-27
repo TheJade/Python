@@ -1,0 +1,26 @@
+#https://medium.com/husarion-blog/10-steps-to-choosing-the-right-motors-for-your-robotic-project-bf5c4b997407
+
+from math import pi as pi
+g = 9.81 #m/s^2 gravity
+
+m_r = 50 #kg Robot Weight
+m_l = 10 #kg load weight
+W = 6 #number of wheels
+v_n = 1 #m/s nominal speed
+v_u = 0.5 #m/s speed uphill at 30%
+t_a = 3 #s acceleration time
+k = 30 #% max slope
+d_w = 0.1524 #m diameter of wheels in meters
+
+N_t = 60 * v_n / (pi * d_w)
+print("needed for speed:", N_t, "rpm of each wheel")
+
+F_t = g * k * (m_r + m_l)
+print("Thrust Force (for up hill):", F_t, "N")
+
+P_u = F_t * v_u
+print("Power (for up hill):", P_u, "W")
+
+T_t = 0.5 * d_w / 2 * F_t
+print("Torque needed(total:", T_t, "Nm")
+print("Torque per wheel:", T_t/W, "Nm")
