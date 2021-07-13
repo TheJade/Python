@@ -1,3 +1,4 @@
+Word
 d 
 d 
 d 
@@ -5479,7 +5480,8 @@ diplopia
 diplopy 
 diplopod 
 diplopoda 
-diplostemonous 
+"
+iplostemonous 
 diplostemony 
 dipneumona 
 dipnoi 
@@ -6209,8 +6211,8 @@ discreditable
 discreditor 
 discreet 
 discreet 
--ances 
--ancies 
+#NAME?
+#NAME?
 discrepance 
 discrepancy 
 discrepant 
@@ -8009,7 +8011,7 @@ diverticle
 diverticular 
 diverticula 
 diverticulum 
--ti 
+#NAME?
 divertimento 
 diverting 
 divertise 
@@ -8529,9 +8531,9 @@ dolt
 doltish 
 dolus 
 dolven 
--dom 
--dom 
--dom 
+#NAME?
+#NAME?
+#NAME?
 dom 
 dom 
 domable 
@@ -9441,7 +9443,7 @@ draughts
 draughtsmen 
 draughtsman 
 draughtsman 
-"draughtsman 
+draughtsman "
 draughtsman 
 draughtsmanship 
 draughty 

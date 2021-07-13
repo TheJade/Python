@@ -9,8 +9,6 @@
 
 import pandas as pd
 
-df = pd.read_csv('Bword.csv')
-
 #for fixing the csv
 #   # A, 0
 #   old = df['Word'][0][0]
@@ -25,6 +23,8 @@ df = pd.read_csv('Bword.csv')
 
 letters = input("Enter the 3 letters to be searched: ")
 
+df = pd.read_csv(letters[0].upper() + 'word.csv')
+
 working_words = []
 
 for i in range(len(df['Word'])):
@@ -32,13 +32,21 @@ for i in range(len(df['Word'])):
     if ((df['Word'][i][len(df['Word'][i])-2]) == letters[2].lower()):   #this is working
         for j in range(1, len(df['Word'][i])-2):
             if ((df['Word'][i][j]) == letters[1].lower()):
-                working_words.append(df['Word'][i])
-                break
-
+                if(df['Word'][i][0].lower() == letters[0].lower()): #this is just to double check since there can be wrong words in the .csv files
+                    working_words.append(df['Word'][i])
+                    break
+                
+if 0 == len(working_words):
+    print("There are no word that has the combination!")
+    exit(1)
 temp = working_words[0]
+word_count = 0
 for i in range(len(working_words)):
     if (working_words[i] == temp):
         temp = working_words[i]
         continue
     print(working_words[i])
     temp = working_words[i]
+    word_count += 1
+
+print("total possible words: " + str(word_count))
