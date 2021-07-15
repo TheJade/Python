@@ -49,4 +49,4 @@ for i in range(len(working_words)):
     temp = working_words[i]
     word_count += 1
 
-print("total possible words: " + str(word_count))
+print("total possible words: " + str(word_count) + " using the letters " + letters.upper())
