@@ -9,7 +9,7 @@
 
 import pandas as pd
 
-df = pd.read_csv('Bword.csv')
+df = pd.read_csv('Cword.csv')
 
 #for fixing the csv
 #   # A, 0

@@ -1,4 +1,4 @@
-#program will be able to search the 3 letters of the licence plate and do the word game search to see if there are any words
+#program will be able to search the 3 letters of the license plate and do the word game search to see if there are any words
 
 #currently only gonna use a english dictionary
 
